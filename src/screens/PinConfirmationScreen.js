@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
 const PinConfirmationScreen = () => {
-  return <Text style={{ fontSize: 48 }}>Pin Confirmation Screen</Text>;
+  return <Text style={{ fontSize: 40 }}>Pin Confirmation Screen</Text>;
 };
 
 const styles = StyleSheet.create({});

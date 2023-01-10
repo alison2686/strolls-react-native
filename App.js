@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AccountScreen from "./src/screens/AccountScreen";
 import CreatePinScreen from "./src/screens/CreatePinScreen";
 import FindRouteScreen from "./src/screens/FindRouteScreen";
@@ -10,22 +11,29 @@ import SigninScreen from "./src/screens/SigninScreen";
 import SignupScreen from "./src/screens/SignupScreen";
 import UploadPhotoScreen from "./src/screens/UploadPhotoScreen";
 
-export default function App() {
+function HomeScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Strolls: A Walking Adventure!</Text>
+      <Button
+        title="Go to Account"
+        onPress={() => navigation.navigate("Account")}
+      />
+    </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+
+function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
-        <Text>Strolls: A Walking Adventure!</Text>
-        <StatusBar style="auto" />
-      </View>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Account" component={AccountScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default App;

@@ -15,6 +15,11 @@ To develop applications with Expo, you need two tools. A command-line tool calle
 
 [React Navigation](https://reactnavigation.org/docs/getting-started/) Routing and navigation for Expo and React Native apps.
 
+Installing dependencies into an Expo managed project​
+In your project directory, run: ```npx expo install react-native-screens react-native-safe-area-context```
+
+
+
 ## Installation
 
 ```npm start```
