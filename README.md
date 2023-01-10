@@ -18,7 +18,7 @@ To develop applications with Expo, you need two tools. A command-line tool calle
 ## Installation
 
 ```npm start```
-Scan the QR code on Expo Go to open the app
+Then scan the QR code on Expo Go to open the app
 
 
 
