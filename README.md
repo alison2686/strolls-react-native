@@ -24,6 +24,9 @@ In your project directory, run: ```npx expo install react-native-screens react-n
 
 [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/) A simple tab bar on the bottom of the screen that lets you switch between different routes. Routes are lazily initialized -- their screen components are not mounted until they are first focused.
 
+## Icons
+```npm i react-native-vector-icons```
+
 
 
 ## Installation

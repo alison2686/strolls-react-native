@@ -10,16 +10,47 @@ import RouteResultScreen from "./src/screens/RouteResultScreen";
 import SigninScreen from "./src/screens/SigninScreen";
 import SignupScreen from "./src/screens/SignupScreen";
 import UploadPhotoScreen from "./src/screens/UploadPhotoScreen";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Strolls: A Walking Adventure!</Text>
       <Button
-        title="Go to Account"
+        title="Let's Go!"
         onPress={() => navigation.navigate("Account")}
       />
     </View>
+  );
+}
+
+const Tab = createBottomTabNavigator();
+
+function NavTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: "Home",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home" color={"blue"} size={24} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Account"
+        component={AccountScreen}
+        options={{
+          tabBarLabel: "Account",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="account" color={"blue"} size={24} />
+          ),
+        }}
+      />
+    </Tab.Navigator>
   );
 }
 
@@ -28,10 +59,11 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      {/* <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Account" component={AccountScreen} />
-      </Stack.Navigator>
+      </Stack.Navigator> */}
+      <NavTabs />
     </NavigationContainer>
   );
 }
