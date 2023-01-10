@@ -1,8 +1,14 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Button } from "react-native";
 
-const AccountScreen = () => {
-  return <Text style={{ fontSize: 40 }}>Account Screen</Text>;
+const AccountScreen = ({ navigation }) => {
+  return (
+    <View>
+      <Text style={{ fontSize: 40 }}>Account Screen</Text>
+      <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
+      <Button title="Go back" onPress={() => navigation.goBack()} />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({});
