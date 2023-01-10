@@ -15,6 +15,8 @@ To develop applications with Expo, you need two tools. A command-line tool calle
 
 [Expo Go](https://expo.dev/client) client app (Android or iOS) or use a Android and/or iOS simulator.
 
+### React Navigation
+
 [React Navigation](https://reactnavigation.org/docs/getting-started/) Routing and navigation for Expo and React Native apps.
 
 Installing dependencies into an Expo managed project​
