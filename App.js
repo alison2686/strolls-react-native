@@ -19,7 +19,7 @@ function HomeScreen({ navigation }) {
       <Text>Strolls: A Walking Adventure!</Text>
       <Button
         title="Let's Go!"
-        onPress={() => navigation.navigate("Account")}
+        onPress={() => navigation.navigate("FindRoute")}
       />
     </View>
   );
@@ -47,6 +47,20 @@ function NavTabs() {
           tabBarLabel: "Account",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account" color={"blue"} size={24} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="FindRoute"
+        component={FindRouteScreen}
+        options={{
+          tabBarLabel: "Find Route",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="map-search-outline"
+              color={"blue"}
+              size={24}
+            />
           ),
         }}
       />
