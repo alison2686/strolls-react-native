@@ -57,6 +57,20 @@ function NavTabs() {
           ),
         }}
       />
+      <Tab.Screen
+        name="FindRoute"
+        component={FindRouteScreen}
+        options={{
+          tabBarLabel: "Find Route",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="map-search-outline"
+              color={"blue"}
+              size={24}
+            />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 }

@@ -7,7 +7,6 @@ const AccountScreen = ({ navigation }) => {
       <Text style={{ fontSize: 40 }}>Account Screen</Text>
       {/* <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
       <Button title="Go back" onPress={() => navigation.goBack()} /> */}
-      {/* <Image source={require("../../assets/landing.png")} /> */}
     </View>
   );
 };
