@@ -1,7 +1,8 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button, Image } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./src/screens/HomeScreen";
 import AccountScreen from "./src/screens/AccountScreen";
 import CreatePinScreen from "./src/screens/CreatePinScreen";
 import FindRouteScreen from "./src/screens/FindRouteScreen";
@@ -12,18 +13,6 @@ import SignupScreen from "./src/screens/SignupScreen";
 import UploadPhotoScreen from "./src/screens/UploadPhotoScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-
-function HomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Strolls: A Walking Adventure!</Text>
-      <Button
-        title="Let's Go!"
-        onPress={() => navigation.navigate("FindRoute")}
-      />
-    </View>
-  );
-}
 
 const Tab = createBottomTabNavigator();
 
