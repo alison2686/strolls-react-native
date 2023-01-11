@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text, Button } from "react-native";
+import { View, StyleSheet, Text, Button, Image } from "react-native";
 
 const AccountScreen = ({ navigation }) => {
   return (
