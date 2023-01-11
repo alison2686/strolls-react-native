@@ -25,7 +25,7 @@ function NavTabs() {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={"blue"} size={24} />
+            <MaterialCommunityIcons name="home" color={"#89c5cc"} size={24} />
           ),
         }}
       />
@@ -35,7 +35,11 @@ function NavTabs() {
         options={{
           tabBarLabel: "Account",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color={"blue"} size={24} />
+            <MaterialCommunityIcons
+              name="account"
+              color={"#89c5cc"}
+              size={24}
+            />
           ),
         }}
       />
@@ -47,7 +51,7 @@ function NavTabs() {
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="map-search-outline"
-              color={"blue"}
+              color={"#89c5cc"}
               size={24}
             />
           ),

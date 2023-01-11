@@ -1,15 +1,17 @@
 import React from "react";
-import { View, StyleSheet, Text, Image } from "react-native";
+import { View, StyleSheet, Text, Image, Button } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Strolls: A Walking Adventure!</Text>
+    <View style={styles.container}>
+      <Text style={styles.logo}>Strolls</Text>
       <Image
         style={{ width: 350, height: 200 }}
         source={require("../../assets/landing.png")}
       />
+      <Text style={styles.text}>Find Your Adventure</Text>
       <Button
+        style={styles.button}
         title="Let's Go!"
         onPress={() => navigation.navigate("FindRoute")}
       />
@@ -17,6 +19,27 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  logo: {
+    fontSize: 40,
+    marginBottom: 60,
+  },
+  text: {
+    fontWeight: "bold",
+    fontSize: 28,
+    padding: 25,
+  },
+  button: {
+    backgroundColor: "#89c5cc",
+    borderRadius: 4,
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+  },
+});
 
 export default HomeScreen;
