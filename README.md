@@ -8,6 +8,9 @@ The goal is to provide a service for wellness and health through encouraging use
 
 ## Prerequisites
 
+### React Native
+[React Native](https://www.npmjs.com/package/react-native)
+
 ### Expo
 To develop applications with Expo, you need two tools. A command-line tool called Expo CLI to serve your project, and a mobile client app called Expo Go to open the project on Android and iOS platforms. Additionally, you can use any web browser to run the project on the web.
 
