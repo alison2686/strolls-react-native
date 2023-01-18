@@ -38,6 +38,19 @@ In your project directory, run: ```npx expo install react-native-screens react-n
 ```npm start```
 Then scan the QR code on Expo Go to open the app
 
+## Contributing
+
+### Pull requests required (no reviewer needed)
+
+[GitHub Repo](https://github.com/alison2686/strolls-react-native)
+- Create a new branch for your changes for example ```add-result-form```
+- Commit and push the changes
+- Open pull request in GitHub
+- Resolve merge conflicts and click Create Pull Request
+- No review needed
+- Select Squash and Merge
+- Delete branch (optional)
+
 
 
 
